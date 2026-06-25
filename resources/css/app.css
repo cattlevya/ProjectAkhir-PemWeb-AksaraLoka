@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Typography defaults */
+body {
+  font-family: 'Manrope', sans-serif;
+  background: #fbfbe2;
+  color: #191c3c;
+}
+h1, h2, h3, h4 {
+  font-family: 'Epilogue', sans-serif;
+}
+
+/* Editorial shadow — subtle, premium feel */
+.editorial-shadow {
+  box-shadow: 0px 12px 32px rgba(25, 28, 60, 0.04);
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(251, 251, 226, 0.8);
+  backdrop-filter: blur(20px);
+}
+
+/* Horizontal scroll tanpa scrollbar */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

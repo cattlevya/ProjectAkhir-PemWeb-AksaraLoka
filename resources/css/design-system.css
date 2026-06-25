@@ -1,0 +1,75 @@
+:root {
+  /* === CORE PALETTE === */
+  --color-espresso:        #2D1B14;  /* Primary brand — navbar, headings */
+  --color-espresso-deep:   #1A0F0A;  /* Hover states darkest */
+  --color-espresso-mid:    #4A2E22;  /* Secondary surfaces dark */
+  --color-espresso-light:  #7A5548;  /* Muted text on dark bg */
+
+  --color-cream:           #FDFBF7;  /* Page background */
+  --color-cream-warm:      #F5F0E8;  /* Card surface */
+  --color-cream-mid:       #EDE5D8;  /* Dividers, borders */
+  --color-cream-deep:      #DDD0BC;  /* Stronger borders */
+
+  --color-gold:            #C4A35A;  /* Accent — eyebrow labels, highlights */
+  --color-gold-muted:      #8A6F3C;  /* Gold on dark bg */
+
+  /* === SEMANTIC === */
+  --color-text-primary:    #1A0F0A;
+  --color-text-secondary:  #695D48;
+  --color-text-muted:      #A08C78;
+  --color-text-inverse:    #FDFBF7;
+
+  /* === DARK MODE (toggle dengan class .dark pada HTML) === */
+  --color-dark-bg:         #0F0A07;
+  --color-dark-surface:    #1C1208;
+  --color-dark-card:       #241810;
+  --color-dark-border:     #3A2518;
+  --color-dark-text:       #EDE5D8;
+  --color-dark-muted:      #8A7060;
+
+  /* Typography Scale */
+  --font-display:  'Fraunces', serif;
+  --font-body:     'DM Sans', sans-serif;
+
+  /* Size Scale (8pt grid) */
+  --text-hero:   clamp(48px, 7vw, 88px);  /* Hero headline */
+  --text-h1:     clamp(36px, 5vw, 56px);
+  --text-h2:     clamp(28px, 4vw, 40px);
+  --text-h3:     24px;
+  --text-body:   16px;
+  --text-small:  14px;
+  --text-label:  11px;
+
+  /* Spacing */
+  --letter-spacing-tight:   -0.03em;
+  --letter-spacing-label:    0.18em;
+  --letter-spacing-body:     0.01em;
+
+  /* Grid System */
+  --grid-max:     1440px;
+  --grid-gutter:  clamp(24px, 4vw, 64px);
+  --section-gap:  clamp(80px, 10vw, 140px);
+
+  /* Component Spacing */
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  24px;
+  --space-lg:  40px;
+  --space-xl:  64px;
+  --space-2xl: 96px;
+
+  /* Radius */
+  --radius-none: 0px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-pill: 999px;
+}
+
+/* Dark mode overrides */
+html.dark {
+  --color-cream:           var(--color-dark-bg);
+  --color-cream-warm:      var(--color-dark-surface);
+  --color-cream-mid:       var(--color-dark-border);
+  --color-text-primary:    var(--color-dark-text);
+  --color-text-secondary:  var(--color-dark-muted);
+}
